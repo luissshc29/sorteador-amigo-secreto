@@ -1,0 +1,138 @@
+@import "styles/variaveis";
+
+.titulo {
+    font-size: 2em;
+    font-weight: 600;
+    color: $azul-claro;
+}
+
+.formulario {
+    width: 60%;
+    margin: 1.5em auto;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    border-radius: 30px;
+    box-shadow: 2px 2px 3px black;
+
+    &__icone {
+        grid-column: 1;
+        grid-row: 1;
+        z-index: 1;
+        color: $preto-transparente;
+        align-self: center;
+        margin-left: 2em;
+    }
+
+    &__input {
+        grid-column: 1;
+        grid-row: 1;
+        padding: 2em 2em 2em 5em;
+        border-radius: 30px 0 0 30px;
+        border: 2px solid black;
+
+        &::placeholder {
+            color:$preto-transparente;
+            font-family: $fonte-principal;
+            text-align: center;
+        }
+
+    }
+
+    &__botao {
+        grid-column: 2;
+        font-family: $fonte-principal;
+        border-radius: 0 30px 30px 0;
+        color: black;
+        background-color: $preto-transparente-mais-claro;
+        border: 2px solid black;
+        transition: 150ms;
+
+        &:hover {
+            background-color: $preto-transparente;
+            cursor: pointer;
+        }
+
+        &:active {
+            box-shadow: 3px 3px 6px  $preto-transparente inset, -3px -3px 6px  $preto-transparente inset;
+        }
+
+    }
+
+}
+
+.mensagem__erro {
+    margin: 1em 0;
+    text-align: center;
+    color: white;
+    background-color: $vermelho-claro;
+    padding: 1em 3em;
+}
+
+.formulario__escuro {
+
+    .formulario__icone {
+        color: $cinza;
+    }
+
+    .formulario__input {
+        background-color: $preto-transparente;
+        color: white;
+
+        &::placeholder {
+            color: $cinza;
+        }
+
+    }
+
+    .formulario__botao {
+        color: white;
+
+        &:hover {
+            background-color: $azul-claro;
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .titulo {
+        font-size: 1.5em;
+    } 
+
+    .formulario {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        box-shadow: none;
+        gap: 1em;
+        justify-content: center;
+        margin-bottom: 0;
+
+        &__icone {
+            font-size: 1em;
+            margin-left: 1.5em;
+        }
+
+        &__input {
+            grid-row: 1;
+            border-radius: 30px;
+            box-shadow: 2px 2px 3px black;
+            height: 1em;
+
+            &::placeholder {
+                font-size: 1em;
+                text-align: left;
+            }
+        }
+
+        &__botao {
+            grid-row: 2;
+            grid-column: 1;
+            border-radius: 30px;
+            width: 40%;
+            justify-self: center;
+            height: 4em;
+            box-shadow: 2px 2px 3px black;
+        }
+
+    }
+}

@@ -1,0 +1,50 @@
+@import 'styles/variaveis';
+
+.botao__ativo, .botao__inativo {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-size: 1.3em;
+    font-family: $fonte-principal;
+    border-radius: 30px;
+    box-shadow: 2px 2px 3px black;
+    padding: 0.7em;
+    transition: 300ms;
+}
+
+.botao__ativo {
+    background-color: $laranja;
+
+    &__icone {
+        font-size: 1.5em;
+    }
+
+    &:hover {
+        background-color: $azul-claro;
+        cursor: pointer;
+    }
+    
+    &:active {
+        box-shadow: 3px 3px 6px  $preto-transparente inset, -3px -3px 6px  $preto-transparente inset;
+    }
+
+}
+
+.botao__inativo {
+    background-color: $cinza;
+}
+
+@media screen and (max-width:1024px) {
+    .botao__ativo, .botao__inativo {
+        width: 40%;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .botao__ativo, .botao__inativo {
+        width: 70%;
+    }
+}

@@ -1,0 +1,36 @@
+@import 'styles/variaveis';
+
+.lista {
+    min-height: 180px;
+    max-height: 150px;
+    overflow-y: scroll;
+    width: auto;
+    padding: 0 5em;
+    margin: 1em 0;
+
+    &__item {
+        font-weight: 400;
+        font-size: 1.1em;
+        line-height: 2em;
+        color: $cinza-escuro;
+    }
+}
+
+.lista__escuro {
+
+    .lista__item {
+        color: $creme;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .lista {
+        min-height: 120px;
+        max-height: 100px;
+        margin: 1em 0;
+
+        &__item {
+            line-height: 1.7em;
+        }
+    }
+}

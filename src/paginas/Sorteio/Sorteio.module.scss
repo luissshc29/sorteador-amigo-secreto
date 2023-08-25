@@ -1,0 +1,52 @@
+@import 'styles/variaveis';
+
+.titulo {
+    color: $azul-claro;
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    gap: 2em;
+
+    &__select {
+        border-radius: 30px;
+        padding: 1em;
+        width: 100%;
+        box-shadow: 2px 2px 3px black;
+        font-family: $fonte-principal;
+    }
+
+    &__texto {
+        font-size: 1.3em;
+        color: $cinza-escuro;
+        line-height: 1.8em;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    &__amigoSecreto {
+        color: $laranja;
+        font-weight: 400;
+        font-size: 1.5em;
+    }
+
+}
+
+.form__escuro {
+
+    .form__select {
+        background-color: $cinza-escuro;
+        color: white;
+    }
+
+    .form__texto {
+        color: $creme;
+    }
+}

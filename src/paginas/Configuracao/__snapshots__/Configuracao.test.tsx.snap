@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Uma pagina de configuração Deve ser renderizada corretamente 1`] = `
+<div>
+  <h1
+    class="titulo"
+  >
+    Vamos começar!
+  </h1>
+  <form
+    class="formulario"
+  >
+    <svg
+      class="formulario__icone"
+      fill="currentColor"
+      height="1em"
+      stroke="currentColor"
+      stroke-width="0"
+      viewBox="0 0 16 16"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+      />
+      <path
+        d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"
+        fill-rule="evenodd"
+      />
+    </svg>
+    <input
+      class="formulario__input"
+      placeholder="Insira os nomes dos participantes"
+      type="text"
+      value=""
+    />
+    <button
+      class="formulario__botao"
+      disabled=""
+      type="submit"
+    >
+      Adicionar
+    </button>
+  </form>
+  
+  <ul
+    class="lista"
+  />
+  <footer
+    class="rodape"
+  >
+    <button
+      class="botao__inativo"
+      disabled=""
+      type="button"
+    >
+      <svg
+        class="rodape__botao__icone"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 1024 1024"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
+        />
+        <path
+          d="M719.4 499.1l-296.1-215A15.9 15.9 0 0 0 398 297v430c0 13.1 14.8 20.5 25.3 12.9l296.1-215a15.9 15.9 0 0 0 0-25.8zm-257.6 134V390.9L628.5 512 461.8 633.1z"
+        />
+      </svg>
+      Iniciar brincadeira
+    </button>
+    <img
+      alt="sacolas"
+      class="rodape__imagem"
+      src="sacolas.png"
+    />
+  </footer>
+</div>
+`;

@@ -1,0 +1,28 @@
+@import 'styles/variaveis';
+
+.card {
+    background-color: $creme;
+    min-height: 100vh;
+    border-radius: 64px 64px 0 0;
+    border: solid black 2px;
+    display: grid;
+    margin-top: -32px;
+    place-items: center;
+    font-family: $fonte-principal;
+    padding: 4em 2em 2em 2em;
+}
+
+.card__escuro {
+    background-color: $cinza-azulado;
+}
+
+@media screen and (max-width:1024px){
+    .card {
+        padding: 2em 1em;
+        min-height: 95vh;
+        justify-content: center;
+        margin-top: -24px;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+}
